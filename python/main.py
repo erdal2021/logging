@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import logging
 import os
 
@@ -13,6 +14,15 @@ if log_level not in ["INFO", "DEBUG", "ERROR", "FATAL"]:
 
 # Konfiguriere das Logging
 logging.basicConfig(level=log_level)
+
+# Erlaube CORS für das Frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5500"],  # Ursprung deines Frontends
+    allow_credentials=True,
+    allow_methods=["GET"],
+    allow_headers=["*"],
+)
 
 @app.get("/info")
 def info_endpoint():

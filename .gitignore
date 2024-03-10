@@ -9,3 +9,4 @@ src/env
 .htaccess
 sql_scripts1/
 cloudformation
+env

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTTP API Test</title>
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Eigene CSS-Datei -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 mb-4">NodeJS, Express HTTP API Test</h1>
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Button</th>
+              <th scope="col">Logmeldungen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <button id="infoBtn" class="btn btn-primary">GET /info</button>
+              </td>
+              <td>
+                <div id="infoLogContainer"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="debugBtn" class="btn btn-primary">GET /debug</button>
+              </td>
+              <td>
+                <div id="debugLogContainer"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="errorBtn" class="btn btn-primary">GET /error</button>
+              </td>
+              <td>
+                <div id="errorLogContainer"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="fatalBtn" class="btn btn-primary">GET /fatal</button>
+              </td>
+              <td>
+                <div id="fatalLogContainer"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS and jQuery (optional, only if you need JS features) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- main.js for functionality -->
+<script src="main.js"></script>
+</body>
+</html>

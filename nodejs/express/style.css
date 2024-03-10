@@ -1,0 +1,12 @@
+button {
+    display: inline-block;
+    margin-right: 10px; /* optional: Abstand zwischen den Buttons */
+  }
+  
+  .logMessage {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+  
